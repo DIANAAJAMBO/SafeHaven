@@ -4,37 +4,39 @@ import Image1 from '../assets/Image1.jpg'
 
 const Signup = () => {
   return (
-    <Container>
+    <Container fluid>
       <Row>
-        <Col lg={6}>
-          <img src={Image1} style={{ width: '100%' }} alt="women holding hands" />
+        <Col lg={5} style={{ padding: '0' }}>
+          <img src={Image1} style={{ width: '100%', height: '100vh' }} alt="women holding hands" />
         </Col>
-        <Col lg={6}>
-          <h2>Create Account</h2>
-          <p>Begin your journey with us today</p>
-          <Form>
-            <Form.Group controlId="fullname">
+        <Col lg={7} className="d-flex flex-column align-items-center  " style={{ margin: '0px' }}>
+          <div style={{ marginTop: '10%' }}>
+            <h2>Create Account</h2>
+            <p>Begin your journey with us today</p>
+          </div>
+          <Form style={{ width: '60%' }}>
+            <Form.Group controlId="fullname" className="mb-3">
               <Form.Label>Full Name</Form.Label>
-              <Form.Control type="text" placeholder="Enter Fullname" />
+              <Form.Control type="text" placeholder="Enter Fullname" size="lg"/>
             </Form.Group>
-            <Form.Group controlId="formBasicEmail">
+            <Form.Group controlId="formBasicEmail" className="mb-3">
               <Form.Label>Email</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Control type="email" placeholder="Enter email" size="lg"/>
             </Form.Group>
 
-            <Form.Group controlId="formBasicPassword">
+            <Form.Group controlId="formBasicPassword" className="mb-3">
               <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
+              <Form.Control type="password" placeholder="Password" size="lg" />
             </Form.Group>
-            <Form.Group controlId="formBasicPassword">
+            <Form.Group controlId="formBasicPassword" className="mb-3">
               <Form.Check type="checkbox" label="I accept the terms and conditions" />
             </Form.Group>
-            
-            <Button variant="primary" type="submit">
+
+            <Button variant="primary" type="submit" className="mb-3" size="lg" style={{ width: '100%' }}>
               Sign Up
             </Button>
-            <p>OR SIGNUP WITH</p>
-            <p>Already have an account? <a href="/login">Click Here</a></p>
+            <p  style={{ textAlign: 'center' }}>OR REGISTER WITH</p>
+            <p  style={{ textAlign: 'center' }}>Already have an account? <a href="/login">Click Here</a></p>
           </Form>
         </Col>
       </Row>
