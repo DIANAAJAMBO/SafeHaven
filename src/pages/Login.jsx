@@ -28,11 +28,11 @@ const login = () => {
                 <Form.Check type="checkbox" label="Remember Me" />
               </Form.Group>
               <Form.Group controlId="formBasicPassword">
-                <a href="">Forgot Password?</a>
+                <a href="/forgotpassword">Forgot Password?</a>
               </Form.Group>
             </div>
 
-            <Button variant="primary" type="submit" size="lg" style={{ width: '100%' }} className="mb-3" >
+            <Button type="submit" size="lg" style={{ width: '100%', backgroundColor: 'rgba(100, 42, 182, 1)' }} className="mb-3" >
               Sign in
             </Button>
             <p style={{ textAlign: 'center' }}>OR LOGIN </p>

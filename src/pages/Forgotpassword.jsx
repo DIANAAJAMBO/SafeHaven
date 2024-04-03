@@ -14,7 +14,7 @@ const Forgotpassword = () => {
                             <Form.Label>Email</Form.Label>
                             <Form.Control type="password" placeholder="Enter Email" size="lg" className="mb-3" />
                         </Form.Group>
-                        <Button variant="primary" type="submit" size="lg"style={{ width: '100%' }}>
+                        <Button type="submit" size="lg"style={{ width: '100%',backgroundColor: 'rgba(100, 42, 182, 1)' }}>
                             Continue
                         </Button>
                     </Form>

@@ -32,7 +32,7 @@ const Signup = () => {
               <Form.Check type="checkbox" label="I accept the terms and conditions" />
             </Form.Group>
 
-            <Button variant="primary" type="submit" className="mb-3" size="lg" style={{ width: '100%' }}>
+            <Button variant="primary" type="submit" className="mb-3" size="lg" style={{ width: '100%', backgroundColor: 'rgba(100, 42, 182, 1)'  }}>
               Sign Up
             </Button>
             <p  style={{ textAlign: 'center' }}>OR REGISTER WITH</p>

@@ -11,12 +11,12 @@ const Ourevents = () => {
                             <p style={{ marginLeft: '5px' }}><b>Our Events</b></p>
                             <hr style={{ width: '50%', marginLeft: '10px' }} />
                         </div>
-                        <p>Join us in our mission to empower and uplift abused victims on their journey towards healing and recovery</p>
+                        <p><b>Join us in our mission to empower and uplift abused victims on their journey towards healing and recovery</b></p>
                     </Row>
                     <Row>
                         <Col>
                             <div style={{ width: '60%', height: '200px', backgroundColor: '#A73554', borderRadius: '20px' }} >
-                                <h5 style={{ color: 'white', paddingTop: '20%' }}>A day our with abused Victims</h5>
+                                <h5 style={{ color: 'white', paddingTop: '20%', marginLeft:'6%' }}>A day our with abused Victims</h5>
                             </div>
                         </Col>
                         <Col>
