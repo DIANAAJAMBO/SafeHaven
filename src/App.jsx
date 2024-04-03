@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import Login from './pages/Login.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,6 +9,8 @@ import Home from './pages/Home.jsx';
 import Aboutus from './pages/Aboutus.jsx';
 import Contactus from './pages/Contactus.jsx';
 import Services from './pages/Services.jsx';
+import Layout from './pages/Layout.jsx'
+import Reportcases from './pages/Reportcases.jsx';
 
 function App() {
 
@@ -18,17 +19,21 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          {/* Routes with layout (navbar and footer) */}
+          <Route path="/" element={<Layout><Home /></Layout>} />
+          <Route path="/aboutus" element={<Layout><Aboutus /></Layout>} />
+          <Route path="/contactus" element={<Layout><Contactus /></Layout>} />
+          <Route path="/services" element={<Layout><Services /></Layout>} />
+          <Route path="/reportcases" element={<Layout><Reportcases /></Layout>} />
+
+          {/* Routes without layout (no navbar and footer) */}
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/verifyaccount" element={<Verifyaccount />} />
-          <Route path="/aboutus" element={<Aboutus />} />
-          <Route path="/contactus" element={<Contactus />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/forgotpassword" element={<Forgotpassword />} />
           <Route path="/forgotpassword" element={<Forgotpassword />} />
         </Routes>
       </Router>
+
     </>
   )
 }

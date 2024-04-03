@@ -1,0 +1,38 @@
+.doughnut-chart {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .doughnut-chart-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    clip: rect(0, 200px, 200px, 100px); /* Hide overflow */
+  }
+  
+  .doughnut-chart-slice {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    clip: rect(0, 100px, 200px, 0); /* Hide overflow */
+    transform: rotate(var(--offset, 0deg));
+  }
+  
+  .doughnut-chart-slice::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    background: conic-gradient(
+      #FF6384 var(--offset, 0deg) 0%,
+      #FF6384 calc(var(--offset, 0deg) + var(--value, 0deg)) 0%,
+      transparent calc(var(--offset, 0deg) + var(--value, 0deg)) 100%,
+      transparent var(--offset, 0deg) 100%
+    );
+  }
+  
