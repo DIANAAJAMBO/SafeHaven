@@ -1,15 +1,16 @@
 import React from 'react';
 import { Nav, Button, Navbar } from 'react-bootstrap';
 import '../styles/nav.css';
+import Logo from '../assets/safehavenlogo.png'
 
 const NavbarComponent = () => {
     return (
         <Navbar variant="light" bg="white" expand="lg" fixed='top'>
-            <Navbar.Brand href="/">
+            <Navbar.Brand href="/" className=''>
                 <img
-                    src="/path/to/your/logo.png" 
-                    width="30" 
-                    height="30" 
+                    src={Logo} 
+                    width="100" 
+                    height="60" 
                     className="d-inline-block align-top"
                     alt="Logo"
                 />
