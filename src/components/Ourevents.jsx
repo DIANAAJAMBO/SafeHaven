@@ -9,7 +9,7 @@ const Ourevents = () => {
                     <Row className="">
                         <div style={{ display: 'flex' }}>
                             <p style={{ marginLeft: '5px', fontSize:'20px' }}><b>Our Events</b></p>
-                            <hr style={{ width: '50%', marginLeft: '10px' }} />
+                            <hr style={{ width: '80%', marginLeft: '10px', height: '1.5px', backgroundColor: 'black'  }} />
                         </div>
                         <p style={{ fontSize:'20px' }}><b>Join us in our mission to empower and uplift abused victims on their journey towards healing and recovery</b></p>
                     </Row>
