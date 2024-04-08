@@ -8,10 +8,10 @@ const Ourevents = () => {
                 <Col>
                     <Row className="">
                         <div style={{ display: 'flex' }}>
-                            <p style={{ marginLeft: '5px' }}><b>Our Events</b></p>
+                            <p style={{ marginLeft: '5px', fontSize:'20px' }}><b>Our Events</b></p>
                             <hr style={{ width: '50%', marginLeft: '10px' }} />
                         </div>
-                        <p><b>Join us in our mission to empower and uplift abused victims on their journey towards healing and recovery</b></p>
+                        <p style={{ fontSize:'20px' }}><b>Join us in our mission to empower and uplift abused victims on their journey towards healing and recovery</b></p>
                     </Row>
                     <Row>
                         <Col>
