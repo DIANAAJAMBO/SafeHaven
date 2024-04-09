@@ -1,12 +1,14 @@
 import React from 'react'
 import { Row, Col, Container, Button, Form, InputGroup } from 'react-bootstrap';
-import logo from '../assets/safehavenlogo.png'
+import logo from '../assets/LOGO.png'
+
+ 
 const Footer = () => {
     return (
         <Container fluid style={{ marginTop: '5%', backgroundColor: '#642AB6', padding: '6%' }}>
             <Row>
                 <Col>
-                    <img src={logo} alt="Logo" width="150" height="60"/>
+                <img src={logo} height='50%' />
                 </Col>
                 <Col>
                     <div style={{ margin: '1% 5%' }}>
