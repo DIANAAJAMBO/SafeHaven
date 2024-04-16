@@ -50,7 +50,7 @@ const Footer = () => {
                             placeholder="Your email"
                             aria-label="Your email"
                             aria-describedby="basic-addon2"
-                            style={{ backgroundColor: 'inherit' }}
+                            style={{ backgroundColor: 'inherit', color: '#D4D4D4' }}
                         />
                         <Button id="button-addon2" style={{ backgroundColor: 'white', color: '#642AB6' }}>
                             Subscribe

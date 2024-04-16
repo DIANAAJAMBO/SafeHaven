@@ -27,36 +27,42 @@ const Contactus = () => {
             <p>4 Broad Avenue, Lagos Nigeria.</p>
           </Col>
         </Row>
-        <Row className="justify-content-center mt-5">
-          <Col md={6}>
-            <Form>
-              <Form.Group controlId="formFullName" className="mb-3">
-                <Form.Label>Full Name</Form.Label>
-                <Form.Control type="text" placeholder="Enter your full name" />
-              </Form.Group>
+        <Row>
+          <Form style={{ maxWidth: '70%', margin: '0 auto' }}>
+            <Row className="justify-content-center mt-5 ">
+              <Col md={6} className="mx-auto">
+                <Form.Group controlId="formFirstName" className="mb-3">
+                  <Form.Label>First Name</Form.Label>
+                  <Form.Control type="text" placeholder="Enter your first name" />
+                </Form.Group>
 
-              <Form.Group controlId="formEmail" className="mb-3">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="Enter your email address" />
-              </Form.Group>
-
-              <Form.Group controlId="formSubject" className="mb-3">
-                <Form.Label>Subject</Form.Label>
-                <Form.Control type="text" placeholder="Enter the subject of your message" />
-              </Form.Group>
-
+                <Form.Group controlId="formEmail" className="mb-3">
+                  <Form.Label>Email address</Form.Label>
+                  <Form.Control type="email" placeholder="Enter your email address" />
+                </Form.Group>
+              </Col>
+              <Col md={6}>
+                <Form.Group controlId="formFullName" className="mb-3">
+                  <Form.Label>Last Name</Form.Label>
+                  <Form.Control type="text" placeholder="Enter your last name" />
+                </Form.Group>
+                <Form.Group controlId="formSubject" className="mb-3">
+                  <Form.Label>Subject</Form.Label>
+                  <Form.Control type="text" placeholder="Enter the subject of your message" />
+                </Form.Group>
+              </Col>
+            </Row>
+            <Row >
               <Form.Group controlId="formMessage" className="mb-3">
                 <Form.Label>Message</Form.Label>
-                <Form.Control as="textarea" rows={3} placeholder="Enter your message" />
+                <Form.Control as="textarea" rows={3} placeholder="Enter your message" style={{ height: '20vh'}} />
               </Form.Group>
-
-              <Button variant="primary" type="submit" style={{ marginLeft: '40%' }}>
-                Send Message
-              </Button>
-            </Form>
-          </Col>
+            </Row>
+            <Button variant="primary" type="submit" style={{ marginLeft: '40%', backgroundColor: 'rgba(244, 97, 136, 1)' }}>
+              Send Message
+            </Button>
+          </Form>
         </Row>
-
 
       </Row>
     </Container>
