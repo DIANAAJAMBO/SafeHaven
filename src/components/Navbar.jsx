@@ -34,7 +34,7 @@ const NavbarComponent = () => {
                         </Nav.Item>
                     </Nav>
                     <Nav.Item>
-                        <Button as={NavLink} to="/reportcases" className="report-cases-btn  me-5" activeClassName="active" style={{ marginRight: '10px' }}>Report Cases</Button>
+                        <Button as={NavLink} to="/reportcases" id='reportbtn' className="report-cases-btn  me-5" activeClassName="active" style={{ marginRight: '10px' }}>Report Cases</Button>
                     </Nav.Item>
                     <Nav.Item>
                         <Button as={NavLink} to="/login" className="report-cases-btn  me-5" activeClassName="active" style={{ marginRight: '10px' }}>LOGIN</Button>

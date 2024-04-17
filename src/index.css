@@ -22,12 +22,13 @@
   background-color: white;
 }
 
-.report-cases-btn:hover,
-.report-cases-btn:active {
-  background-color: purple;
-  color: white;
+/* #reportbtn.report-cases-btn:hover,
+#reportbtn.report-cases-btn:active:hover,
+#reportbtn.report-cases-btn:active {
+  background-color: purple !important;
+  color: white !important;
 
-}
+} */
 
 .form-control:focus {
   border-color:rgba(100, 42, 182, 0.6);
