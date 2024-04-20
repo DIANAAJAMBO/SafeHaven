@@ -11,6 +11,13 @@ import Contactus from './pages/Contactus.jsx';
 import Services from './pages/Services.jsx';
 import Layout from './pages/Layout.jsx'
 import Reportcases from './pages/Reportcases.jsx';
+import Dashboard from './pages/Dashboard.jsx';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import Overview from './pages/Overview.jsx';
+import Cases from './pages/Cases.jsx';
+import Contacts from './pages/Contacts.jsx';
+import Usermanagement from './pages/Usermanagement.jsx';
+
 
 function App() {
 
@@ -31,6 +38,13 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/verifyaccount" element={<Verifyaccount />} />
           <Route path="/forgotpassword" element={<Forgotpassword />} />
+          <Route path="/dashboard" element={<Dashboard />} >
+            <Route index element={<Overview />} />
+            <Route path="cases" element={<Cases />} />
+            <Route path="contacts" element={<Contacts />} />
+            <Route path="usermanagement" element={<Usermanagement/>} />
+          </Route>
+
         </Routes>
       </Router>
 
