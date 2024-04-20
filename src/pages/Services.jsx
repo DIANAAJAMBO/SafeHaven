@@ -4,8 +4,8 @@ import Holdinghands from '../assets/holdinghands.png'
 
 const Services = () => {
   return (
-    <Container className="d-flex flex-column justify-content-center" >
-      <Row>
+    <Container className="d-flex flex-column justify-content-center mt-5" >
+      <Row className="mt-5">
         <Row className="mt-5">
           <Col className='' md={6} style={{ marginLeft: '', width: '' }}>
             <Row >

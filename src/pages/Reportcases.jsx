@@ -15,27 +15,10 @@ const Reportcases = () => {
                                     <Form.Control type="email" placeholder="Enter your email address" />
                                 </Form.Group>
 
-                                <Form.Group controlId="formAge" className="mb-3">
-                                    <Form.Label>Age</Form.Label>
-                                    <Form.Control type="number" placeholder="Enter your age" />
-                                </Form.Group>
-
                                 <Form.Group controlId="formAddress" className="mb-3">
-                                    <Form.Label>Address</Form.Label>
+                                    <Form.Label>Address of Incidence</Form.Label>
                                     <Form.Control type="text" placeholder="Enter your address" />
                                 </Form.Group>
-                                <Form.Group controlId="formDescription" className="mb-3" >
-                                    <Form.Label>Describe the abuse in detail</Form.Label>
-                                    <Form.Control as="textarea" rows={3} placeholder="Enter a detailed description of the abuse" />
-                                </Form.Group>
-                            </Col>
-
-                            <Col style={{}}>
-                                <Form.Group controlId="formRelationship" className="mb-3">
-                                    <Form.Label>Relationship with abuser</Form.Label>
-                                    <Form.Control type="text" placeholder="Enter your relationship with the abuser" />
-                                </Form.Group>
-
                                 <Form.Group controlId="formAbuseType" className="mb-3">
                                     <Form.Label>Type of abuse</Form.Label>
                                     <Form.Control as="select">
@@ -46,9 +29,23 @@ const Reportcases = () => {
                                         <option>Other</option>
                                     </Form.Control>
                                 </Form.Group>
+                                <Form.Group controlId="formDescription" className="mb-3" >
+                                    <Form.Label>Describe the abuse in detail</Form.Label>
+                                    <Form.Control as="textarea"  placeholder="Enter a detailed description of the abuse" />
+                                </Form.Group>
+                            </Col>
 
-                                <Form.Group controlId="formAnonymous" className="mb-3">
-                                    <Form.Label>Remain anonymous</Form.Label>
+                            <Col style={{}}>
+                                <Form.Group controlId="formAge" className="mb-3">
+                                    <Form.Label>Age</Form.Label>
+                                    <Form.Control type="number" placeholder="Enter your age" />
+                                </Form.Group>
+                                <Form.Group controlId="formRelationship" className="mb-3">
+                                    <Form.Label>Relationship with abuser</Form.Label>
+                                    <Form.Control type="text" placeholder="Enter your relationship with the abuser" />
+                                </Form.Group>
+                                <Form.Group controlId="formAnonymous" className="mt-4">
+                                    <Form.Label>Would you like to remain anonymous to your abuser?</Form.Label>
                                     <div>
                                         <Form.Check
                                             inline
@@ -66,13 +63,13 @@ const Reportcases = () => {
                                         />
                                     </div>
                                 </Form.Group>
-                                <Form.Group controlId="formEvidence "className="mb-3">
+                                <Form.Group controlId="formEvidence " className="mt-4">
                                     <Form.Label>Upload evidence</Form.Label>
                                     <Form.Control type="file" />
                                 </Form.Group>
                             </Col>
                         </Row>
-                        <Button variant="primary" type="submit" >
+                        <Button  type="submit" style={{ marginLeft: '40%', backgroundColor: 'rgba(244, 97, 136, 1)' }}>
                             Submit Report
                         </Button>
                     </Form>

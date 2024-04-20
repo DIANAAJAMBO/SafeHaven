@@ -1,23 +1,36 @@
-import React from 'react'
+import React, { useState }from 'react'
 import { Row, Col, Container, Button } from 'react-bootstrap';
 import Children from '../assets/children.jpeg'
 import Hand from '../assets/hand.jpeg'
 import Twowomen from '../assets/twowomen.jpeg'
 import Meeting from '../assets/meeting.jpeg'
+import Volunteerform from '../components/Volunteerform';
 
 const Aboutus = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleShowModal = (event) => {
+    event.stopPropagation();
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+  
   return (
+
     <Container fluid className="d-flex flex-column justify-content-center mt-3" >
       <Row>
-        <Row className="">
+        <Row className="" >
           <Col className='p-0' md={7} >
             <div>
-              <img src={Children} alt="Children" style={{ height: '50vh', width: '100%' }} />
+              <img src={Children} alt="Children" style={{ height: '60vh', width: '100%' }} />
             </div>
           </Col>
           <Col className='p-0' md={5}>
             <div>
-              <img src={Hand} alt="Hand" style={{ height: '50vh', width: '100%' }} />
+              <img src={Hand} alt="Hand" style={{ height: '60vh', width: '100%' }} />
             </div>
           </Col>
         </Row>
@@ -55,21 +68,39 @@ const Aboutus = () => {
             </div>
           </Col>
         </Row>
-        <Row >
-          <Col className=''  style={{ marginLeft: '10%', marginTop:'4%'}}>
-            <div style={{ border: '2px solid pink', height: '400px', padding:'7%'}}>
-            <h4>Our Values</h4>
-              <p style={{ fontSize: '.9rem' }}> At SafeHaven, we understand that the journey to healing is unique for each survivor. Therefore, we offer a holistic approach that encompasses emotional support, legal assistance, educational resources, and community outreach. Through our trauma-informed programs and services, we aim to address the complex needs of survivors while fostering a culture of empathy, respect, and understanding.</p> 
+        <Row className='mt-5'>
+          <Col md={5} className='p-5' style={{ marginLeft: '', marginTop: '' }}>
+            <div style={{ border: '1px solid rgba(244, 97, 136, 1)', height: '50vh', padding: '7%' }}>
+              <h4>Our Values</h4>
+              <p style={{ fontSize: '.9rem' }}> We approach our work with empathy and compassion, recognizing the inherent dignity and worth of every individual.</p>
+              <p style={{ fontSize: '.9rem' }}> We empower survivors to reclaim their agency, voice, and autonomy in their healing journey.</p>
+              <p style={{ fontSize: '.9rem' }}> We believe in the power of collaboration and partnership to create meaningful change and support the broader community in ending abuse.</p>
+              <p style={{ fontSize: '.9rem' }}> We advocate for systemic change and social justice to create a world where abuse is not tolerated, and all individuals can live with dignity and safety.</p>
             </div>
           </Col>
-          <Col style={{ marginTop:'13%'}}>
-          <div style={{ border: '2px solid pink', height: '250px', width:'100%', padding:'7%'}}>
-            <h4>Our Values</h4>
-              <p style={{ fontSize: '.9rem' }}> At SafeHaven, we understand that the journey to healing is unique for each survivor. Therefore, we offer a holistic approach that encompasses emotional support, legal assistance, educational resources, and community outreach. Through our trauma-informed programs and services, we aim to address the complex needs of survivors while fostering a culture of empathy, respect, and understanding.</p> 
+          <Col md={7} style={{ marginTop: '9%' }}>
+            <div style={{
+              border: '1px solid rgba(244, 97, 136, 1)',
+              height: '38vh',
+              width: '100%',
+              padding: '7%',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between'
+            }}>
+              <div>
+                <h4>Get Involved</h4>
+                <p style={{ fontSize: '.9rem' }}> Join us in our mission to create a world free from abuse. Whether through volunteering, donating, or spreading awareness, your support enables us to continue our vital work and make a lasting impact in the lives of survivors and their communities.</p>
+              </div>
+              <div style={{ display: 'flex', gap: '20px', marginLeft: 'auto' }}> 
+                <Button style={{ backgroundColor: 'rgba(244, 97, 136, 1)', marginTop: '30px' }} onClick={handleShowModal}>Join as a volunteer</Button>
+                <Button style={{ backgroundColor: '#FFFF', color: 'black', marginTop: '30px' }}>Donate</Button>
+              </div>
             </div>
           </Col>
         </Row>
       </Row>
+      <Volunteerform showModal={showModal} handleCloseModal={handleCloseModal} />
     </Container>
 
   )
