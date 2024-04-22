@@ -22,13 +22,13 @@
   background-color: white;
 }
 
-/* #reportbtn.report-cases-btn:hover,
+#reportbtn.report-cases-btn:hover,
 #reportbtn.report-cases-btn:active:hover,
 #reportbtn.report-cases-btn:active {
   background-color: purple !important;
   color: white !important;
 
-} */
+}
 
 .form-control:focus {
   border-color:rgba(100, 42, 182, 0.6);
@@ -48,4 +48,32 @@
   background-color: rgba(100, 42, 182, 1);
   border-radius: 5px;
   color:white;
+}
+
+.contact-card {
+  border-radius: 10px; /* Adjust border radius */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Add shadow */
+  width: 18rem; /* Adjust width as needed */
+  margin-bottom:2%;
+ }
+ 
+ .avatar {
+  border-radius: 50%; /* Make the avatar circular */
+  width: 80px; /* Adjust as needed */
+  height: 80px;
+ }
+ 
+ .text-center {
+  text-align: center; /* Center the text */
+ }
+ .card-text{
+  font-size:small;
+  
+ }
+
+ .shadow-row {
+  transition: box-shadow 0.3s ease-in-out;
+}
+.shadow-row:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
