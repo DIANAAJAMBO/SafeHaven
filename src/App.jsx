@@ -12,7 +12,7 @@ import Services from './pages/Services.jsx';
 import Layout from './pages/Layout.jsx'
 import Reportcases from './pages/Reportcases.jsx';
 import Errorpage from './pages/Errorpage.jsx';
-
+import Adminlogin from './pages/Adminlogin.jsx'
 function App() {
 
 
@@ -31,7 +31,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/verifyaccount" element={<Verifyaccount />} />
           <Route path="/forgotpassword" element={<Forgotpassword />} />
-
+          <Route path="/adminlogin" element={<Adminlogin />} />
           <Route path="*" element={<Layout><Errorpage /></Layout>} />
         </Routes>
       </Router>
