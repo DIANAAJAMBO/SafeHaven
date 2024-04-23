@@ -13,6 +13,14 @@ import Layout from './pages/Layout.jsx'
 import Reportcases from './pages/Reportcases.jsx';
 import Errorpage from './pages/Errorpage.jsx';
 import Adminlogin from './pages/Adminlogin.jsx'
+import Dashboard from './pages/Dashboard.jsx';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import Overview from './pages/Overview.jsx';
+import Cases from './pages/Cases.jsx';
+import Contacts from './pages/Contacts.jsx';
+import Usermanagement from './pages/Usermanagement.jsx';
+
+
 function App() {
 
 
@@ -33,6 +41,13 @@ function App() {
           <Route path="/forgotpassword" element={<Forgotpassword />} />
           <Route path="/adminlogin" element={<Adminlogin />} />
           <Route path="*" element={<Layout><Errorpage /></Layout>} />
+          <Route path="/dashboard" element={<Dashboard />} >
+            <Route index element={<Overview />} />
+            <Route path="cases" element={<Cases />} />
+            <Route path="contacts" element={<Contacts />} />
+            <Route path="usermanagement" element={<Usermanagement/>} />
+          </Route>
+
         </Routes>
       </Router>
 
