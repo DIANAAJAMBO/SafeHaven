@@ -1,8 +1,19 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const Reportcases = () => {
+
+    const navigate = useNavigate();
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+        // Check if user is logged in 
+        const isLoggedIn = localStorage.getItem('token') !== null; 
+        setIsLoggedIn(isLoggedIn);
+    }, []);
 
     const [formData, setFormData] = useState({
         email: '',
@@ -12,7 +23,7 @@ const Reportcases = () => {
         age: '',
         relationship: '',
         anonymous_YN: '',
-        evidence: null,
+        // evidence: null,
     });
 
     const handleChange = (e) => {
@@ -37,15 +48,23 @@ const Reportcases = () => {
                 age: '',
                 relationship: '',
                 anonymous_YN: '',
-                evidence: null,
+                // evidence: null,
             });
         } catch (error) {
             console.error('Error submitting form:', error);
+            setError('An error occurred. Please try again.'); 
         }
     };
 
+    if (!isLoggedIn) {
+        // Redirect to login if not logged in
+        navigate.push('/login');
+        return null; // Return null to prevent rendering the component
+    }
+
     return (
         <Container className="mt-5">
+            {error && <div className="alert alert-danger">{error}</div>} 
             <Row className="justify-content-center">
                 <Col md={8}>
                     <h3 style={{ textAlign: 'center', marginBottom: '5%' }}>Report Abuse</h3>

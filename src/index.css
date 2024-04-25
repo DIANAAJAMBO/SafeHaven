@@ -77,3 +77,33 @@
 .shadow-row:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.form-header {
+  margin-top: 10%;
+}
+
+ /* Styles for small devices */
+@media (min-width: 220px) and (max-width: 1020px) {
+  .signuppic{
+    display:none;
+  }
+  .form-header h2 {
+    font-size: 20px; 
+    text-align: center; 
+}
+}
+
+
+ /* Styles for big devices */
+@media (width: 1024px) {
+  .form-header {
+    margin-top: 1%;
+
+ 
+}
+
+.form-header h2 {
+    font-size: 20px; 
+}
+ 
+}
