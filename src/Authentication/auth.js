@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-export const loginUser = async (email, password) => {
+export const loginUser = async (email, user_password) => {
     try {
-        const response = await axios.post('https://safeheaven-lnt5.onrender.com/login', { email, password });
+        const response = await axios.post('https://safeheaven-lnt5.onrender.com/login', { email, user_password });
         const token = response.data.token;
         localStorage.setItem('token', token);
         return true;

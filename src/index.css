@@ -82,28 +82,201 @@
   margin-top: 10%;
 }
 
- /* Styles for small devices */
-@media (min-width: 220px) and (max-width: 1020px) {
+
+
+/* Styles for small devices */
+@media (min-width: 220px) and (max-width: 1000px) {
   .signuppic{
     display:none;
   }
+
   .form-header h2 {
     font-size: 20px; 
     text-align: center; 
+  }
+
+  .loginpic{
+    display:none;
+  }
+
+  .loginform{
+    width:'100%'
+  }
 }
+
+.welcomebackground {
+  background-image: url('./assets/holdinghands.png');
+  background-size:cover;
+  background-position: center;
+  height: 60vh;
+  margin-top: 6%;
+  padding: 10% 0 ;
+  width:100vw
+}
+
+.welcometitle {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.welcomesubtitle {
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 6%;
+  font-size:large;
+}
+
+.knowsection {
+  margin-top: 5%;
+}
+
+.knowdivider {
+  display: flex;
+  font-size:smaller;
+}
+.knowdivider1 h5 {
+  font-size:medium;
+  
+}
+
+.knowdivider hr {
+  width: 20%;
+  margin-left: 10px;
+}
+
+.knowdivider p {
+  margin-left: 15px;
+}
+
+.knowcontent p {
+  font-size: 0.7rem;
+  margin-top: 1%;
+}
+
+.knowimage {
+  margin-left: 10%;
+}
+
+.knowimage img {
+  width: 90%;
+  height: 50vh;
+  border-radius: 8px;
+}
+
+.knowbutton {
+  background-color: rgba(244, 97, 136, 1);
+  color: white;
+  margin-top: 1%;
+}
+
+.whatwedosection {
+  margin-top: 5%;
+  background-color: rgba(244, 97, 136, 0.2);
+}
+
+.wwddivider {
+  display: flex;
+  
+}
+
+.wwddivider hr {
+  width: 20%;
+  margin-left: 10px;
+  
+}
+
+.wwddivider p {
+  margin-left: 15px;
+  color: black;
+}
+
+.wwdcontent {
+  margin-left: 10%;
+  width: 30%;
+}
+
+.wwdcontent h5 {
+  color: black;
+}
+
+.wwdcontent p {
+  font-size: 0.8rem;
+  
+}
+/* .wwdimage {
+  height: 100vh;
+} */
+
+
+.wwdimage img {
+  height: 50vh;
+  width: 75%;
+  border-radius: 8px;
+  margin-left: 10%;
+ 
 }
 
 
- /* Styles for big devices */
-@media (width: 1024px) {
+/* Styles for big devices */
+@media (min-width: 1024px) {
   .form-header {
     margin-top: 1%;
+    text-align: center;
+  }
 
- 
-}
-
-.form-header h2 {
+ .form-header h2 {
     font-size: 20px; 
-}
+  }
+
+  .loginpic{
+    height: 100vh;
+   
+  }
+  
+  .loginform{
+    width:'100%'
+  }
+  
+  .signuppic{
+    height: 100vh;
+    width:50vw;
+   }
+  .signupform1{
+    padding-top: 2%;
+   }
+  
+   .knowimage img {
+    width: 80%;
+    
+  }
+  .wwdcontent {
+    margin-left: 10%;
+    width: 40%;
+  }
+  .wwdimage img {
+    height: 50vh;
+    width: 70%;
+    border-radius: 8px;
+    margin-left: 10%;
+  }
  
+}
+
+
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1) 
+  and (orientation: portrait) {
+  .loginpic{
+    height: 60vh;
+    width:50vw;
+  }
+
+  .signuppic{
+   height: 60vh;
+   width:50vw;
+  }
+
 }

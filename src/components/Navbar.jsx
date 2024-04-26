@@ -16,7 +16,7 @@ const NavbarComponent = () => {
                     alt="Logo"
                 />
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle aria-controls="basic-navbar-nav text-black" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <div className="d-flex justify-content-center w-100">
                     <Nav className="">
@@ -34,7 +34,7 @@ const NavbarComponent = () => {
                         </Nav.Item>
                     </Nav>
                     <Nav.Item>
-                        <Button as={NavLink} to="/reportcases" id='reportbtn' className="report-cases-btn  me-5" activeClassName="active" style={{ marginRight: '10px' }}>Report Cases</Button>
+                        <Button as={NavLink} to="/reportcases" id='reportbtn' className="report-cases-btn  me-5"  style={{ marginRight: '10px' }}>Report Cases</Button>
                     </Nav.Item>
                 </div>
 
