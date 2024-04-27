@@ -7,11 +7,11 @@ const Footer = () => {
     return (
         <Container fluid style={{ marginTop: '5%', backgroundColor: '#642AB6', padding: '6%' }}>
             <Row>
-                <Col>
-                <img src={logo} height='50%' />
+                <Col lg={2}>
+                <img src={logo} height='' />
                 </Col>
-                <Col>
-                    <div style={{ margin: '1% 5%' }}>
+                <Col lg={2}>
+                    <div style={{ margin: '1% 10%' }}>
                         <h6 style={{ color: 'white', fontSize: '17px' }}><b>Home</b></h6>
                         <ul style={{ listStyleType: 'none', paddingLeft: '0px', marginLeft: '0px', color: '#D4D4D4' }} >
                             <li>About us</li>
@@ -21,7 +21,7 @@ const Footer = () => {
                         </ul>
                     </div>
                 </Col>
-                <Col>
+                <Col lg={2}>
                     <div style={{ margin: '1% 5%' }}>
                         <h6 style={{ color: 'white', fontSize: '17px' }}><b>More</b></h6>
                         <ul style={{ listStyleType: 'none', paddingLeft: '0px', marginLeft: '0px', color: '#D4D4D4' }} >
@@ -32,7 +32,7 @@ const Footer = () => {
                         </ul>
                     </div>
                 </Col>
-                <Col>
+                <Col lg={2}>
                     <div style={{ margin: '1% 5%' }}>
                         <h6 style={{ color: 'white', fontSize: '17px' }}><b>Connect</b></h6>
                         <ul style={{ listStyleType: 'none', paddingLeft: '0px', marginLeft: '0px', color: '#D4D4D4' }} >
@@ -43,8 +43,8 @@ const Footer = () => {
                         </ul>
                     </div>
                 </Col>
-                <Col>
-                    <h2 style={{ color: 'white' }}>Subscribe to  get latest updates</h2>
+                <Col lg={4}>
+                    <h2 style={{ color: 'white', fontSize:'large' }} className="mt-5">Subscribe to  get latest updates</h2>
                     <InputGroup className="mb-3" >
                         <Form.Control
                             placeholder="Your email"
