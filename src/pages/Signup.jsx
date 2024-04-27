@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import Image1 from '../assets/Image1.jpg'
+import  Woman from '../assets/womanworried.png'
 import axios from 'axios';
+
 
 const Signup = () => {
 
@@ -80,12 +81,12 @@ const Signup = () => {
   return (
     <Container fluid>
       <Row>
-        <Col lg={5} style={{ padding: '0' }}>
-          <img src={Image1} style={{ width: '100%', height: '100vh' }} alt="women holding hands" className='signuppic' />
+        <Col lg={6} style={{ padding: '0' }}>
+          <img src={Woman} style={{ width: '100%', height: '100vh' }} alt="woman" className='signuppic' />
         </Col>
-        <Col lg={7} sm={12} className=" signupform1 d-flex flex-column align-items-center  " style={{ margin: '0px' }}>
+        <Col lg={6} sm={12} className=" signupform1 d-flex flex-column align-items-center  " style={{ margin: '0px' }}>
           <div className="form-header">
-            <h2>Create Account</h2>
+            <h2><b>Create Account</b></h2>
             <p>Begin your journey with us today</p>
           </div>
           <Form style={{ width: '60%' }} onSubmit={handleSubmit} className='signupform'>
@@ -94,7 +95,7 @@ const Signup = () => {
               <Form.Control
                 type="text"
                 placeholder="Enter First name"
-                size="lg"
+                size="md"
                 name="first_name"
                 value={formData.first_name}
                 onChange={handleChange}
@@ -105,7 +106,7 @@ const Signup = () => {
               <Form.Control
                 type="text"
                 placeholder="Enter Last name"
-                size="lg" name="last_name"
+                size="md" name="last_name"
                 value={formData.last_name}
                 onChange={handleChange}
               />
@@ -115,7 +116,7 @@ const Signup = () => {
               <Form.Control
                 type="email"
                 placeholder="Enter email"
-                size="lg"
+                size="md"
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
@@ -124,7 +125,7 @@ const Signup = () => {
 
             <Form.Group controlId="signupPassword" className="mb-3">
               <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" size="lg" name="user_password" value={formData.user_password} onChange={handleChange} />
+              <Form.Control type="password" placeholder="Password" size="md" name="user_password" value={formData.user_password} onChange={handleChange} />
             </Form.Group>
             <Form.Group controlId="signupterms&conditions" className="mb-3">
               <Form.Check type="checkbox" label="I accept the terms and conditions" />

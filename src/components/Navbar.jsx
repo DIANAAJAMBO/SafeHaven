@@ -16,7 +16,7 @@ const NavbarComponent = () => {
                     alt="Logo"
                 />
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav text-black" />
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <div className="d-flex justify-content-center w-100">
                     <Nav className="">

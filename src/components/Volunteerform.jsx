@@ -27,8 +27,8 @@ const Volunteerform = ({ showModal, handleCloseModal }) => {
                     </Form>
                 </Modal.Body>
                 <Modal.Footer>
-                    <div className="d-flex justify-content-center">
-                        <Button variant="secondary" onClick={handleCloseModal} style={{ backgroundColor: 'rgba(244, 97, 136, 1)'}}>
+                    <div className="m-auto">
+                        <Button onClick={handleCloseModal} style={{ backgroundColor: 'rgba(244, 97, 136, 1)', color:'white'}}>
                             JOIN
                         </Button>
                     </div>

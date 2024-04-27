@@ -3,6 +3,7 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import Image1 from '../assets/Image1.jpg'
 import { useNavigate, Link } from 'react-router-dom';
 import { loginUser } from '../Authentication/auth';
+import BackgroundImage from '../assets/holdinghands.png'
 
 const login = () => {
 
@@ -40,10 +41,10 @@ const login = () => {
   return (
     <Container fluid>
       <Row >
-        <Col lg={5} style={{ padding: '0' }}>
-          <img src={Image1} style={{  }} alt="women holding hands" className='loginpic'/>
+        <Col lg={6} style={{ padding: '0' }}>
+          <img src={BackgroundImage} style={{  }} alt="women holding hands" className='loginpic'/>
         </Col>
-        <Col lg={7} className="loginform1 d-flex flex-column align-items-center  " style={{ margin: '0px' }} >
+        <Col lg={6} className="loginform1 d-flex flex-column align-items-center  " style={{ margin: '0px' }} >
           <div style={{ marginTop: '10%' }} className='form-header'>
             <h2>Welcome Back</h2>
             <p>Sign in to continue your progress</p>

@@ -16,7 +16,7 @@ const Ourevents = () => {
                     <p style={{ fontSize: '20px' }}><b>Join us in our mission to empower and uplift abused victims on their journey towards healing and recovery</b></p>
                 </Row>
                 <Row >
-                    <Col className="p-5" style={{ width: '60%', height: '200px', backgroundColor: '#A73554', borderRadius: '20px' }}>
+                    <Col className="p-5" style={{ height: '200px', backgroundColor: '#A73554', borderRadius: '20px' }}>
                         <Row>
                             <Col md={2} style={{ color: 'white' }}>
                                 <p style={{ fontWeight: '' }}><b>13</b></p>
@@ -37,7 +37,7 @@ const Ourevents = () => {
                         </Row>
 
                     </Col>
-                    <Col className="p-5" style={{ width: '60%', height: '200px', backgroundColor: '#A73554', borderRadius: '20px', marginLeft:'20px' }}>
+                    <Col className="p-5" style={{  height: '200px', backgroundColor: '#A73554', borderRadius: '20px', marginLeft:'20px' }}>
                         <Row>
                             <Col md={2} style={{ color: 'white' }}>
                                 <p style={{ fontWeight: '' }}><b>25</b></p>

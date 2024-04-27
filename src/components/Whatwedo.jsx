@@ -1,11 +1,11 @@
 import React from 'react'
 import { Row, Col, Container, Button } from 'react-bootstrap';
-import Image1 from '../assets/Image1.jpg'
 import Woman from '../assets/woman.png'
 import { RiPsychotherapyLine } from "react-icons/ri";
 import { GoLaw } from "react-icons/go";
 import { CiMedicalClipboard } from "react-icons/ci";
 import { SlSupport } from "react-icons/sl";
+
 
 const Whatwedo = () => {
     return (

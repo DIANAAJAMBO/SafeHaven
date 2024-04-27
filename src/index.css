@@ -13,6 +13,7 @@
 .navbar .nav-link:hover {
   background-color: purple !important;
   color: white !important;
+  border-radius: 5px;
 }
 
 
@@ -221,6 +222,10 @@
  
 }
 
+.services p{
+  margin-left: 2%;
+}
+
 
 /* Styles for big devices */
 @media (min-width: 1024px) {
@@ -235,7 +240,7 @@
 
   .loginpic{
     height: 100vh;
-   
+    width:100%;
   }
   
   .loginform{
@@ -264,6 +269,9 @@
     border-radius: 8px;
     margin-left: 10%;
   }
+  .aboutuscontent{
+    margin-top: 15%;
+  }
  
 }
 
@@ -283,5 +291,7 @@
    height: 60vh;
    width:50vw;
   }
+
+
 
 }
