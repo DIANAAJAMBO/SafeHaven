@@ -9,11 +9,11 @@ const Reportcases = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [error, setError] = useState(null);
 
-    useEffect(() => {
-        // Check if user is logged in 
-        const isLoggedIn = localStorage.getItem('token') !== null; 
-        setIsLoggedIn(isLoggedIn);
-    }, []);
+    // useEffect(() => {
+    //     // Check if user is logged in 
+    //     const isLoggedIn = localStorage.getItem('token') !== null; 
+    //     setIsLoggedIn(isLoggedIn);
+    // }, []);
 
     const [formData, setFormData] = useState({
         email: '',
@@ -56,11 +56,11 @@ const Reportcases = () => {
         }
     };
 
-    if (!isLoggedIn) {
-        // Redirect to login if not logged in
-        navigate.push('/login');
-        return null; // Return null to prevent rendering the component
-    }
+    // if (!isLoggedIn) {
+    //     // Redirect to login if not logged in
+    //     navigate.push('/login');
+    //     return null; // Return null to prevent rendering the component
+    // }
 
     return (
         <Container className="mt-5">

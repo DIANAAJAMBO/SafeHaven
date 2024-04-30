@@ -1,6 +1,5 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import Image1 from '../assets/Image1.jpg'
 import { useNavigate, Link } from 'react-router-dom';
 import { loginUser } from '../Authentication/auth';
 import BackgroundImage from '../assets/holdinghands.png'
@@ -29,12 +28,12 @@ const login = () => {
       if (success) {
         navigate('/reportcases'); // Redirect to the reportcases tab
       } else {
-        // Handle login failure (e.g., show an error message)
+
         console.error('Login failed');
       }
     } catch (error) {
       console.error('Login failed:', error);
-      // Handle login failure (e.g., show an error message)
+
     }
   };
 
@@ -42,17 +41,19 @@ const login = () => {
     <Container fluid>
       <Row >
         <Col lg={6} style={{ padding: '0' }}>
-          <img src={BackgroundImage} style={{  }} alt="women holding hands" className='loginpic'/>
+          <img src={BackgroundImage} style={{}} alt="women holding hands" className='loginpic' />
         </Col>
         <Col lg={6} className="loginform1 d-flex flex-column align-items-center  " style={{ margin: '0px' }} >
           <div style={{ marginTop: '10%' }} className='form-header'>
             <h2>Welcome Back</h2>
             <p>Sign in to continue your progress</p>
           </div>
-          <Form style={{ }} onSubmit={handleLogin} className='loginform'>
+          <Form style={{}}
+            // onSubmit={handleLogin}
+            className='loginform'>
             <Form.Group controlId="login_email" className="mb-3" >
               <Form.Label>Email address</Form.Label>
-              <Form.Control 
+              <Form.Control
                 type="email"
                 placeholder="Enter email"
                 size="lg"
@@ -62,11 +63,11 @@ const login = () => {
             </Form.Group>
             <Form.Group controlId="login_password" className="mb-3">
               <Form.Label>Password</Form.Label>
-              <Form.Control 
+              <Form.Control
                 type="password"
                 placeholder="Password"
                 size="lg"
-                name="password"
+                name="user_password"
                 value={formData.user_password}
                 onChange={handleChange} />
             </Form.Group>
@@ -75,13 +76,15 @@ const login = () => {
                 <Form.Check type="checkbox" label="Remember Me" />
               </Form.Group>
               <Form.Group controlId="forgot_password">
-              <Link to="/forgotpassword">Forgot Password?</Link>
+                <Link to="/forgotpassword">Forgot Password?</Link>
               </Form.Group>
             </div>
 
-            <Button type="submit" size="lg" style={{ width: '100%', backgroundColor: 'rgba(100, 42, 182, 1)' }} className="mb-3" >
-              Sign in
-            </Button>
+            <Link to="/reportcases">
+              <Button size="lg" style={{ width: '100%', backgroundColor: 'rgba(100, 42, 182, 1)' }} className="mb-3">
+                SIGN IN
+              </Button>
+            </Link>
             {/* <p style={{ textAlign: 'center' }}>OR LOGIN WITH </p> */}
             <p style={{ textAlign: 'center' }}>Don't have an account? <Link to="/signup">Register here</Link></p>
           </Form>

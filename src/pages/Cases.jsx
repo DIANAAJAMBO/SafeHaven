@@ -37,8 +37,9 @@ const Cases = () => {
                             <td>{index + 1}</td>
                             <td>{item.email}</td>
                             <td>{item.abuse_type}</td>
-                            <td>{item.date}</td>
-                            <td style={{ color: item.status === 'Pending' ? 'red' : item.status === 'Ongoing' ? 'purple' : 'green' }}>{item.status}</td>
+                            <td>{item.created_at}</td>
+                            {/* <td style={{ color: item.status === 'Pending' ? 'red' : item.status === 'Ongoing' ? 'purple' : 'green' }}>{item.status}</td> */}
+                            <td style={{color:'red'}}>Pending</td>
                         </tr>
                     ))}
                 </tbody>

@@ -33,9 +33,9 @@ function App() {
           <Route path="/aboutus" element={<Layout><Aboutus /></Layout>} />
           <Route path="/contactus" element={<Layout><Contactus /></Layout>} />
           <Route path="/services" element={<Layout><Services /></Layout>} />
-          {isLoggedIn && (
+          {/* {isLoggedIn && ( */}
             <Route path="/reportcases" element={<Layout><Reportcases /></Layout>} />
-          )}
+          {/* )} */}
 
 
           {/* Routes without layout (no navbar and footer) */}

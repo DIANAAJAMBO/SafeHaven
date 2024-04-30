@@ -5,10 +5,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 const Welcome = () => {
   return (
     <Container fluid >
-      {/* <div className="welcomebackground">
-        <h2 className="welcometitle">Welcome to Safe Haven where we empower survivors to <br/>reclaim their dignity, voice, and agency</h2>
-        <h4 className="welcomesubtitle">More than 230 cases resolved</h4>
-      </div> */}
       <Row className="" >
         <Col className='p-0' md={6} >
           <div className="welcomebackground">
@@ -19,7 +15,7 @@ const Welcome = () => {
         </Col>
         <Col className='p-0' md={6}>
           <div>
-            <img src={BackgroundImage} alt="Hand" style={{ height: '60vh', width: '100%' }} />
+            <img src={BackgroundImage} alt="Hand" style={{ height: '100%', width: '100%' }} />
           </div>
         </Col>
       </Row>

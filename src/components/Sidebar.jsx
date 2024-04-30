@@ -22,9 +22,9 @@ const Sidebar = () => {
                 <div>
                     <ul className='nav nav-pills flex-column mt-5'>
                         <li className={active === 1 ? 'active nav-item p-2 mb-3 ' : "nav-item p-2 mb-3"} onClick={e => setActive(1)}>
-                            <Link to='/dashboard' className='p-1'>
+                            <Link to='/dashboard' className='p-1' >
                                 <MdSpaceDashboard size={25} className='me-3 ' />
-                                <span className='fs-5'><strong>Overview</strong></span>
+                                <span className='fs-5' ><strong>Overview</strong></span>
                             </Link>
                         </li>
                         <li className={active === 2 ? 'active nav-item p-2 mb-3' : "nav-item p-2 mb-3"} onClick={e => setActive(2)}>

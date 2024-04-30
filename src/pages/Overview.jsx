@@ -2,7 +2,7 @@ import React from 'react'
 
 const Overview = () => {
   return (
-    <div>Overviewkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</div>
+    <div style={{textAlign:'center', marginTop:'10%', fontSize:'50px'}}>WELCOME TO SAFE HAVEN</div>
   )
 }
 

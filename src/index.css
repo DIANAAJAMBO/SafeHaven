@@ -44,6 +44,9 @@
   color:white;
   cursor:pointer;
 }
+.sidebar ul li a {
+  color: black;
+}
 
 .active{
   background-color: rgba(100, 42, 182, 1);

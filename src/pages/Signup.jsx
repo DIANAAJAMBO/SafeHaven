@@ -11,6 +11,7 @@ const Signup = () => {
     last_name: '',
     email: '',
     user_password: '',
+    verify_code: '',
   });
 
   const [otpSent, setOtpSent] = useState(false);
@@ -43,7 +44,7 @@ const Signup = () => {
   const handleVerifyOtp = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://safeheaven-lnt5.onrender.com/verifyVerificationCode', { otp });
+      const response = await axios.post('https://safeheaven-lnt5.onrender.com/verifyVerificationCode', { verify_code: formData.verify_code });
       if (response.status === 200) {
 
         navigate('/login');
@@ -65,7 +66,7 @@ const Signup = () => {
             <Form style={{ width: '100%' }} onSubmit={handleVerifyOtp}>
               <Form.Group controlId="otp">
                 <Form.Label>Enter 6 digits code</Form.Label>
-                <Form.Control type="number" placeholder="Enter OTP" size="lg" className="mb-3" value={otp} onChange={(e) => setOtp(e.target.value)} />
+                <Form.Control type="number" placeholder="Enter OTP" size="lg" className="mb-3" value={formData.verify_code} onChange={(e) => setFormData(prevState => ({ ...prevState, verify_code: e.target.value }))} />
               </Form.Group>
               <Button type="submit" size="lg" style={{ width: '100%', backgroundColor: 'rgba(100, 42, 182, 1)' }}>
                 Verify OTP
