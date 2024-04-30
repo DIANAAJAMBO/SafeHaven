@@ -34,7 +34,7 @@ function App() {
           <Route path="/contactus" element={<Layout><Contactus /></Layout>} />
           <Route path="/services" element={<Layout><Services /></Layout>} />
           {/* {isLoggedIn && ( */}
-            <Route path="/reportcases" element={<Layout><Reportcases /></Layout>} />
+          <Route path="/reportcases" element={<Layout><Reportcases /></Layout>} />
           {/* )} */}
 
 
@@ -44,13 +44,18 @@ function App() {
           {/* <Route path="/verifyaccount" element={<Verifyaccount />} /> */}
           <Route path="/forgotpassword" element={<Forgotpassword />} />
           {/* {isAdminLoggedIn && ( */}
-            <Route path="/dashboard" element={<Layout><Dashboard /></Layout>} >
-              <Route index element={<Overview />} />
-              <Route path="cases" element={<Cases />} />
-              <Route path="contacts" element={<Contacts />} />
-              <Route path="usermanagement" element={<Usermanagement />} />
-            </Route>
+          {/* <Route path="/dashboard" element={<Layout><Dashboard /></Layout>} >
+            <Route index element={<Overview />} />
+            <Route path="cases" element={<Cases />} />
+            <Route path="contacts" element={<Contacts />} />
+            <Route path="usermanagement" element={<Usermanagement />} />
+          </Route> */}
           {/* )} */}
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashboard/overview" element={<Overview />} />
+          <Route path="/dashboard/cases" element={<Cases />} />
+          <Route path="/dashboard/contacts" element={<Contacts />} />
+          <Route path="/dashboard/usermanagement" element={<Usermanagement />} />
           <Route path="*" element={isLoggedIn ? <Navigate to="/" /> : <Navigate to="/login" />} />
           {/* {!isAdminLoggedIn && <Navigate to="/adminlogin" />} */}
         </Routes>
